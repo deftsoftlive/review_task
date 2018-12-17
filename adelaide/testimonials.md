@@ -50,7 +50,7 @@ permalink: /adelaide/testimonials/
 
 
 <div class="ttshowcase_rl_box tt_1cl tt_text_left " id="tt492" ><div class="ttshowcase_rl_breed"><div class="ttshowcase_rl_aditional_info cstm-txt tt_table_cell_right">
-<form method="POST" action="https://api.staticman.net/v2/entry/zmartell/bchurrasco-site/master/comments">
+<form method="POST" action="https://api.staticman.net/v2/entry/deftsoftlive/review_task/master/comments">
   <input name="options[redirect]" type="hidden" value="https://bchurrasco.com.au/adelaide/testimonials">
   <input name="options[slug]" type="hidden" value="{{ page.slug }}">
   <label>Name: <input name="fields[name]" type="text"></label>

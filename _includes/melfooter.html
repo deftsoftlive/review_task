@@ -1,0 +1,109 @@
+
+        <footer class="cstm-footer">
+            <div class="container">
+            <aside id="text-3" class="widget widget_text">			<div class="textwidget"><div class="book-widget-bch midadd_banner">
+                <img src="/wp-content/uploads/2017/01/add_bannerr.jpg" alt=""/>
+                <div class="content-box">
+                    <span>Entertainment</span>
+                    <span> Near B’CHURRASCO</span>
+                    <p>Dine B’CHURRASCO<br> Party KBOX<br> First Round of Drinks on Us</p>
+                    <a href="">CLICK HERE  <img src="/wp-content/themes/bchurrasco/images/arrow-icon.png" alt=""/></a>
+                </div>
+            </div></div>
+                    </aside><!--<div class="trip-advisor"><img src="/wp-content/themes/bchurrasco/images/banner.png" alt="trip-advisor"/></div>-->
+            <aside id="text-4" class="widget widget_text">			<div class="textwidget"><div class="trip-advisor"><img src="/wp-content/themes/bchurrasco/images/banner.png" alt="trip-advisor"/></div></div>
+                    </aside><div class="toggle"><a href="javascript:void(0);" class="togle_icon"><span class="icon_menu"> </span> <span class="icon_menu"> </span> <span class="icon_menu"> </span> </a> MENU</div>	
+                    <div class="footer_top">
+                                 <a href="/" class="active">Home</a> 
+                                 <a href="/history/" >History</a> 
+                                 <a href="/about-us/" >About Us</a> 
+                                 <a href="/functions/" >Functions</a> 
+                                 <a href="/faq/" >FAQ</a> 
+                                 <a href="/location/" >Location</a> 
+                                 <a href="/testimonials/" >Testimonials</a> 
+                             </div>
+            <!--<div class="add_banner"><img src="/wp-content/themes/bchurrasco/images/add_banner.jpg"  alt=""/></div>-->
+                     
+            
+                    <div id="social-links">
+                            <a href="https://twitter.com/B_Churrasco" target="_blank"><img class="preload-image" data-image="/wp-content/themes/bchurrasco/img/twitter.png" data-hover-image="/wp-content/themes/bchurrasco/img/twitter2.png" alt="Twitter"></a>
+                            <a href="https://www.facebook.com/BChurrasco" target="_blank"><img class="preload-image" data-image="/wp-content/themes/bchurrasco/img/facebook.png" data-hover-image="/wp-content/themes/bchurrasco/img/facebook2.png" alt="Facebook"></a>
+                            <a href="http://instagram.com/BChurrasco" target="_blank"><img class="preload-image" data-image="/wp-content/themes/bchurrasco/img/insta.png" data-hover-image="/wp-content/themes/bchurrasco/img/insta2.png" alt="Instagram"></a>
+                            <a href="mailto:bchurrascorestaurant@outlook.com" target="_blank"><img class="preload-image" data-image="/wp-content/themes/bchurrasco/img/email.png" data-hover-image="/wp-content/themes/bchurrasco/img/email2.png" alt="Email"></a>
+                        </div>
+                    </div>
+            
+                    <!--<br><div id="branding">
+                        <a href="http://yokedesign.com.au" target="_blank">Web Design By <img src="/wp-content/themes/bchurrasco/img/yoke-logo.png" alt="Yoke"></a>
+                    </div>-->
+                </footer>
+            
+                
+             <!-- /container -->
+            
+            <script src="/wp-content/themes/bchurrasco/js/main.js"></script>
+            <script src="/wp-content/themes/bchurrasco/js/jquery_validate.js"></script>
+            <script src="/wp-content/themes/bchurrasco/js/custom_js.js"></script>
+            <!--script src="http://simpleerb-app.5pm.co.uk/widget/init/"></script --> 
+            
+            <script type="text/javascript">
+                $(document).ready(function(){     
+                    $(".toggle").click(function(){
+                            $(".footer_top").slideToggle();
+                            
+                        }); 
+                    });
+               /* var wdgt = GetNewWidgetController(1994);
+                wdgt.Width = 470;
+                wdgt.Css = '/wp-content/themes/bchurrasco/css/simpleerb.css';
+                wdgt.Height = 490;
+                wdgt.TargetElementId = 'serb-booking-widget';
+                wdgt.ShowWidget(); */
+            </script> 
+            <script>
+                $(document).ready(function () {
+                    $(".add_banner").click(function () {
+                        $(".popup_box").show();
+                    });
+                    $(".midadd_banner a").click(function (e) {
+                       e.preventDefault();
+                       $(".popup_box").show();
+                   });
+                    $(".popup_box").click(function () {
+                        $(".popup_box").hide();
+                    });
+                    
+                });
+            </script>
+                
+            <div class="overlay-bg" style="display:none;">
+            <div class="overlay-content"><button class="close-btn">x</button>
+            <iframe class = "ifrm_clas" src="" frameborder="0"></iframe>
+            <script type="text/javascript">
+            $(document).ready(function(){
+                  $(".anchor_modal").on('click', function(e) {
+                        e.preventDefault();
+                        // $('.ifrm_clas').attr('src', '');
+                        var ancSrc = $(this).attr('href');
+                        var ifrmUrl = "http://docs.google.com/gview?url="+ancSrc+"&embedded=true";
+                        $('.ifrm_clas').attr('src', ifrmUrl);
+                        $(".overlay-bg").fadeIn('slow');
+                        $(".overlay-bg .overlay-content .ifrm_clas").show();
+                    });
+                         // hide popup when user clicks on close button
+                    $('.close-btn').click(function(){
+                        $(document.body).removeClass('overflow-body');
+                        $('.overlay-bg').hide(); // hide the overlay
+                    });
+            
+                    // hides the popup if user clicks anywhere outside the container
+                    $('.overlay-bg').click(function(){
+                        $(document.body).removeClass('overflow-body');
+                        $('.overlay-bg').hide();
+                    })
+                    // prevents the overlay from closing if user clicks inside the popup overlay
+                    $('.overlay-content').click(function(){
+                        return false;
+                    });	
+            });
+            
